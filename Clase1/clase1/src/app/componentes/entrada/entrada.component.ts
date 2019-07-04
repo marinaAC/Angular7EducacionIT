@@ -7,9 +7,13 @@ import { Component, OnInit } from '@angular/core';
 })
 export class EntradaComponent implements OnInit {
 
+  contar:number = 20;
   constructor() { }
 
   ngOnInit() {
   }
 
+  funcionRestar(){
+    this.contar=this.contar-1;
+  }
 }
