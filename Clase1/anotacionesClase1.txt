@@ -1,0 +1,49 @@
+CURSO ANGULAR 7
+
+-npm -g install @angular/cli
+
+-npm install -g typescript
+
+npm install -g typings (nos ayude con la sintaxis)
+npm install -g bootstrap
+
+npm ---> instalacion generales de componentes, paquetes y dependencias (aquello que inyectamos en nuestra aplicacion)
+
+Los comandos de angular comienzan con 
+ng
+tiene incorporados las funciones de servidor 
+ng serv monta un servidor virtual y podemos usar el localhost
+
+Esto nos permite usar rutas abreviadas
+@angular-devkit/architect    0.801.0
+@angular-devkit/core         8.1.0
+@angular-devkit/schematics   8.1.0
+@schematics/angular          8.1.0
+@schematics/update  
+
+
+typescript
+tsc (solo para traspilar)
+
+ng serve
+
+no usar puertos del 0 al 1023
+
+code .
+
+-etiqueta app-root componente inyectado desde el index
+
+
+Componentes
+-que son inyectados en nuestro html
+-selector *es lo que se convierte en la etiqueta
+-template *plantilla 
+
+/////Crear componentes
+ng generate componente
+ng g c ´nombre´
+
+Hicimos
+cd componentes
+ng g c directivas
+

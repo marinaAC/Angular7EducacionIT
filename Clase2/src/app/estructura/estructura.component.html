@@ -1,0 +1,18 @@
+<div>
+  <button (click)="cambiar=!cambiar">{{cambiar?'Ocultar seccion 1':'Mostrar seccion 1'}}</button>
+  <button (click)="cambiar2=!cambiar2">{{cambiar2?'Mostrar seccion 2':'Ocultar seccion 2'}}</button>
+  <section *ngIf="cambiar">
+    <h1>Seccion 1</h1>
+    <img src="{{logogmail}}" alt="Logo Gmail">
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem impedit delectus odio ut, tenetur vero atque fugit inventore optio maxime harum ratione assumenda, repudiandae ullam esse sequi porro dolorum excepturi.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti neque, error quidem autem delectus ducimus facilis eos rem esse nobis adipisci similique ea ut est aliquid itaque saepe tempore officia?</p>
+  </section>
+</div>
+<div>
+    <section *ngIf="!cambiar2">
+      <h1>Seccion 2</h1>
+      <img src="{{logogmail}}" alt="Logo Gmail">
+      <p style="color:white; background-color: darkblue;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem impedit delectus odio ut, tenetur vero atque fugit inventore optio maxime harum ratione assumenda, repudiandae ullam esse sequi porro dolorum excepturi.</p>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti neque, error quidem autem delectus ducimus facilis eos rem esse nobis adipisci similique ea ut est aliquid itaque saepe tempore officia?</p>
+    </section>
+  </div>

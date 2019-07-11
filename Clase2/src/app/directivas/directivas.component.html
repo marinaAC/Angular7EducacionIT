@@ -1,0 +1,35 @@
+<div>
+  <ul>
+    <li *ngFor="let nombre of nombres">{{nombre}}</li>
+    
+  </ul>
+  <table class="table" *ngIf="usuariosRegistrados.length>0">
+    <thead>
+      <th scope="col">Nombre</th>
+      <th scope="col">Correo</th>
+      <th scope="col">Premium</th>
+      <th scope="col">Foto</th>
+      <th scope="col"></th>
+    </thead>
+    <tbody *ngFor="let usuario of usuariosRegistrados">
+      <td>{{usuario.nombre}}</td>
+      <td>{{usuario.correo}}</td>
+      <td>{{usuario.premium?'si':'no'}}</td>
+      <td><img src="{{usuario.foto}}" alt="foto de {{usuario.nombre}}"></td>
+      <td><button class="btn btn-primary" (click)="borrar(index)">Borrar</button></td>
+    </tbody>
+  </table>
+  <div *ngIf="usuariosRegistrados.length==0" class="alert alert-danger">
+    <p>No hay ningun usuario</p>
+  </div>
+  <div class="col-8">
+  <!-- <form>
+    <div class="form-group">
+      <label>Ingrese su nombre</label>
+      <input type="text" name="nombre" placeholder="Ingrese su nombre" class="form-control">
+      
+    </div>
+    <button class="btn btn-primary"(click)=agregar()>Agregar</button>
+  </form> -->
+</div>
+</div>

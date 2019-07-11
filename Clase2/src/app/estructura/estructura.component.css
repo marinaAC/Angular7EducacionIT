@@ -1,0 +1,8 @@
+div{
+    background: linear-gradient(15deg,rgba(25,150,230,0.5), rgba(10,80,150,0.5))
+}
+section{
+    border:1px solid darkblue;
+    border-radius: 2%;
+    padding:10px 0 10px 0;
+}
