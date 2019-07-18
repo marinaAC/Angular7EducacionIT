@@ -12,11 +12,15 @@ import { environment } from 'src/environments/environment';
 import { AppRoutingModule } from './app-routing.module';
 import { ContactComponent } from './components/contact/contact.component';
 import { DatabaseService } from './services/database.service';
+import { ListaComponent } from './components/lista/lista.component';
+
+
 
 @NgModule({
   declarations: [
     AppComponent,
-    ContactComponent
+    ContactComponent,
+    ListaComponent
   ],
   imports: [
     BrowserModule,
@@ -24,6 +28,7 @@ import { DatabaseService } from './services/database.service';
     AngularFirestoreModule,
     AppRoutingModule,
     ReactiveFormsModule
+    
   ],
   providers: [ DatabaseService],
   bootstrap: [AppComponent]
